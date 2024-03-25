@@ -67,11 +67,11 @@ public class SpringJpaApplication {
 //			System.out.println(book);
 //		}
 		
-		
-		List<Book> allbyWriter = bs.findByWriter("Sarah Adams");
-		for(Book bk : allbyWriter) {
-			System.out.println(bk);
-		}
+//		
+//		List<Book> allbyWriter = bs.findByWriter("Sarah Adams");
+//		for(Book bk : allbyWriter) {
+//			System.out.println(bk);
+//		}
 	}
 
 }
