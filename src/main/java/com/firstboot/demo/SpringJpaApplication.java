@@ -1,5 +1,7 @@
 package com.firstboot.demo;
 
+import java.util.List;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -15,12 +17,19 @@ public class SpringJpaApplication {
 		ApplicationContext ctx = SpringApplication.run(SpringJpaApplication.class, args);
 		BookRepository bs = ctx.getBean(BookRepository.class);
 		
-		Book mybook1 = new Book();
-		mybook1.setName("deep work");
-		mybook1.setWriter("cal newport");
+//		Book hp = new Book();
+//		hp.setName("Harry Potter");
+//		hp.setWriter("j.k.rowling");
+//		bs.save(hp);
+//		System.out.println("saved harry potter");
 		
-		bs.save(mybook1);
-		System.out.println("book created");
+//		System.out.println("book deleted");
+//		bs.deleteById(102);
+		
+//		List<Book> allBooks = bs.findAll();
+//		for(Book book : allBooks) {
+//			System.out.println(book);
+//		}
 		
 	}
 
