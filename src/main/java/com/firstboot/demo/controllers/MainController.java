@@ -49,8 +49,6 @@ public class MainController {
 	public RedirectView handleUpload(@RequestParam("mypic") MultipartFile img) {
 		if(img.isEmpty()) {
 			System.out.println("Image is empty");
-		}else if(img.getContentType().equals("image/jpeg")) {
-			System.out.println(img.getOriginalFilename()+" is not an image");
 		}else {
 			this.imageUploader.uploadImage(img);
 		}
